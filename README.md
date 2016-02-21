@@ -15,7 +15,7 @@ Reading:
 
 ```swift
     let age: UInt32 = stream.read()
-    let name: String = stream.read(length: 14) // Length is required for reading strings)
+    let name: String = stream.read(length: 14) // Length is required for reading strings
 ```
 
 ### Packets
@@ -91,6 +91,8 @@ Add this to `Cartfile`
 ```
 github "justMaku/Miazga" ~> 1.0
 ```
+
+then type in the `Cartfile` directory:
 
 ```
 $ carthage update
