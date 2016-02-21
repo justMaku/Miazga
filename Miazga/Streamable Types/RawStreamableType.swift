@@ -118,5 +118,18 @@ extension Int64: RawStreamableType {
 }
 
 public extension Stream {
-    func read<T: RawStreamableType>() -> T { return T.decode(fromData: self.read(sizeof(T))) }
+    func read<T: RawStreamableType>() -> T {
+        return T.decode(fromData: self.read(sizeof(T)))
+    }
+    
+    func read<T: RawStreamableType>(count count: Int) -> [T] {
+        var elements = [T]()
+        
+        for _ in 0..<count {
+            let element: T = self.read()
+            elements.append(element)
+        }
+        
+        return elements
+    }
 }

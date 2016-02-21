@@ -14,3 +14,4 @@ public protocol StreamableType {
 }
 
 public func << (left: Stream, right: StreamableType) { left.write(right) }
+public func << <T: StreamableType>(left: Stream, right: [T]) { left.write(right) }
