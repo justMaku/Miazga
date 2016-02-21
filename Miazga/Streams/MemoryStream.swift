@@ -17,11 +17,11 @@ public class MemoryStream: Stream {
         self.data = data
     }
     
-    public func write(value: StreamableType) {
+    public func write(value: StreamWriteableType) {
         self.write(value.data)
     }
     
-    public func write<T where T: StreamableType>(values: [T]) {
+    public func write<T where T: StreamWriteableType>(values: [T]) {
         var data = [Byte]()
         for element in values {
             data.appendContentsOf(element.data)

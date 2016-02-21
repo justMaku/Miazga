@@ -20,7 +20,7 @@ struct TestPacket: Packet, Equatable {
         return TestPacket(x: x, y: y)
     }
     
-    func map() -> [StreamableType] {
+    func map() -> [StreamWriteableType] {
         return [x, y]
     }
 

@@ -8,10 +8,4 @@
 
 import Foundation
 
-public protocol StreamableType {
-    var data: [Byte] { get }
-    static func decode(fromData data: [Byte]) -> Self
-}
-
-public func << (left: Stream, right: StreamableType) { left.write(right) }
-public func << <T: StreamableType>(left: Stream, right: [T]) { left.write(right) }
+public protocol StreamableType: StreamWriteableType, StreamReadableType {}

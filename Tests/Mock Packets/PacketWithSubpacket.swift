@@ -21,7 +21,7 @@ struct PacketWithSubpacket: Packet {
         return PacketWithSubpacket(name: name.value, age: age)
     }
     
-    func map() -> [StreamableType] {
+    func map() -> [StreamWriteableType] {
         return [StringSubpacket(name), age]
     }
 }

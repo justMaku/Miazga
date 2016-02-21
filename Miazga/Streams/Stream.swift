@@ -11,7 +11,7 @@ import Foundation
 public typealias Byte = UInt8
 
 public protocol Stream {
-    func write(value: StreamableType)
-    func write<T where T: StreamableType>(values: [T])
+    func write(value: StreamWriteableType)
+    func write<T where T: StreamWriteableType>(values: [T])
     func read(length: Int) -> [Byte]
 }

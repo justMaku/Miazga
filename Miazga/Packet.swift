@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Packet: StreamableType {
     static func decode(fromStream stream: Stream) -> Self
-    func map() -> [StreamableType]
+    func map() -> [StreamWriteableType]
 }
 
 public extension Packet {
