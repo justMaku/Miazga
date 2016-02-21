@@ -31,6 +31,10 @@
 		2E9A7D591C79F59300EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
 		2E9A7D5A1C79FCDD00EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
 		2E9A7D5B1C79FCDD00EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
+		2EB2FD4B1C7A1BC700BC73B8 /* CollectionTypeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD4A1C7A1BC700BC73B8 /* CollectionTypeTestCase.swift */; };
+		2EB2FD541C7A1F6300BC73B8 /* PacketWithSubpacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */; };
+		2EB2FD551C7A1F6300BC73B8 /* StringSubpacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */; };
+		2EB2FD561C7A1F6300BC73B8 /* TestPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		2E68AA371C7888CF001C1CCC /* UInt32TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt32TestCase.swift; sourceTree = "<group>"; };
 		2E68AA391C788E8B001C1CCC /* PacketTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTestCase.swift; sourceTree = "<group>"; };
 		2E9A7D581C79F59300EE6238 /* MemoryStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryStream.swift; sourceTree = "<group>"; };
+		2EB2FD4A1C7A1BC700BC73B8 /* CollectionTypeTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTypeTestCase.swift; sourceTree = "<group>"; };
+		2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketWithSubpacket.swift; sourceTree = "<group>"; };
+		2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSubpacket.swift; sourceTree = "<group>"; };
+		2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPacket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +177,9 @@
 		2E23D08F1C77B14F001D02AB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2FD4C1C7A1EF700BC73B8 /* Mock Packets */,
 				2E68AA361C78888A001C1CCC /* Streamables */,
 				2E23D0921C77B14F001D02AB /* Info.plist */,
-				2E68AA391C788E8B001C1CCC /* PacketTestCase.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -189,6 +197,8 @@
 		2E68AA361C78888A001C1CCC /* Streamables */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2FD4A1C7A1BC700BC73B8 /* CollectionTypeTestCase.swift */,
+				2E68AA391C788E8B001C1CCC /* PacketTestCase.swift */,
 				2E68AA371C7888CF001C1CCC /* UInt32TestCase.swift */,
 			);
 			path = Streamables;
@@ -201,6 +211,16 @@
 				2E23D0881C77AF82001D02AB /* Stream.swift */,
 			);
 			path = Streams;
+			sourceTree = "<group>";
+		};
+		2EB2FD4C1C7A1EF700BC73B8 /* Mock Packets */ = {
+			isa = PBXGroup;
+			children = (
+				2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */,
+				2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */,
+				2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */,
+			);
+			path = "Mock Packets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,8 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB2FD4B1C7A1BC700BC73B8 /* CollectionTypeTestCase.swift in Sources */,
+				2EB2FD561C7A1F6300BC73B8 /* TestPacket.swift in Sources */,
 				2E68AA381C7888CF001C1CCC /* UInt32TestCase.swift in Sources */,
+				2EB2FD541C7A1F6300BC73B8 /* PacketWithSubpacket.swift in Sources */,
 				2E68AA3A1C788E8B001C1CCC /* PacketTestCase.swift in Sources */,
+				2EB2FD551C7A1F6300BC73B8 /* StringSubpacket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
