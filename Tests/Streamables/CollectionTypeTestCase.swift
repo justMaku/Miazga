@@ -30,5 +30,16 @@ class CollectionTypeTestCase: XCTestCase {
         
         XCTAssert(packets == decoded)
     }
+    
+    func testPacketWithCollection() {
+        let collection: [UInt32] = [0, 12, 423]
+        let packet = PacketWithCollection(elements: collection)
+    
+        stream << packet
+        
+        let decoded: PacketWithCollection = stream.read()
+    
+        XCTAssert(packet == decoded)
+    }
  
 }

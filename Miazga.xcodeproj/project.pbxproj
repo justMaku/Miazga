@@ -35,6 +35,13 @@
 		2EB2FD541C7A1F6300BC73B8 /* PacketWithSubpacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */; };
 		2EB2FD551C7A1F6300BC73B8 /* StringSubpacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */; };
 		2EB2FD561C7A1F6300BC73B8 /* TestPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */; };
+		2EB2FD5F1C7A279500BC73B8 /* StreamWriteableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD5E1C7A279500BC73B8 /* StreamWriteableType.swift */; };
+		2EB2FD611C7A27A300BC73B8 /* StreamReadableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD601C7A27A300BC73B8 /* StreamReadableType.swift */; };
+		2EB2FD621C7A27A600BC73B8 /* StreamWriteableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD5E1C7A279500BC73B8 /* StreamWriteableType.swift */; };
+		2EB2FD631C7A27A600BC73B8 /* StreamReadableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD601C7A27A300BC73B8 /* StreamReadableType.swift */; };
+		2EB2FD641C7A27A700BC73B8 /* StreamWriteableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD5E1C7A279500BC73B8 /* StreamWriteableType.swift */; };
+		2EB2FD651C7A27A700BC73B8 /* StreamReadableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD601C7A27A300BC73B8 /* StreamReadableType.swift */; };
+		2EB2FD661C7A298800BC73B8 /* PacketWithCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2FD5B1C7A259900BC73B8 /* PacketWithCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,9 @@
 		2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketWithSubpacket.swift; sourceTree = "<group>"; };
 		2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSubpacket.swift; sourceTree = "<group>"; };
 		2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPacket.swift; sourceTree = "<group>"; };
+		2EB2FD5B1C7A259900BC73B8 /* PacketWithCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketWithCollection.swift; sourceTree = "<group>"; };
+		2EB2FD5E1C7A279500BC73B8 /* StreamWriteableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamWriteableType.swift; sourceTree = "<group>"; };
+		2EB2FD601C7A27A300BC73B8 /* StreamReadableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReadableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				2E68AA341C787ABF001C1CCC /* RawStreamableType.swift */,
+				2EB2FD601C7A27A300BC73B8 /* StreamReadableType.swift */,
+				2EB2FD5E1C7A279500BC73B8 /* StreamWriteableType.swift */,
 				2E68AA2E1C787883001C1CCC /* StreamableType.swift */,
 				2E68AA321C7878BB001C1CCC /* String.swift */,
 			);
@@ -216,6 +228,7 @@
 		2EB2FD4C1C7A1EF700BC73B8 /* Mock Packets */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2FD5B1C7A259900BC73B8 /* PacketWithCollection.swift */,
 				2EB2FD4D1C7A1F0F00BC73B8 /* PacketWithSubpacket.swift */,
 				2EB2FD4F1C7A1F2800BC73B8 /* StringSubpacket.swift */,
 				2EB2FD521C7A1F4F00BC73B8 /* TestPacket.swift */,
@@ -409,7 +422,9 @@
 				2E68AA351C787ABF001C1CCC /* RawStreamableType.swift in Sources */,
 				2E68AA331C7878BB001C1CCC /* String.swift in Sources */,
 				2E9A7D591C79F59300EE6238 /* MemoryStream.swift in Sources */,
+				2EB2FD611C7A27A300BC73B8 /* StreamReadableType.swift in Sources */,
 				2E68AA2D1C78787A001C1CCC /* Packet.swift in Sources */,
+				2EB2FD5F1C7A279500BC73B8 /* StreamWriteableType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +432,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB2FD621C7A27A600BC73B8 /* StreamWriteableType.swift in Sources */,
+				2EB2FD631C7A27A600BC73B8 /* StreamReadableType.swift in Sources */,
 				2E9A7D511C79F25D00EE6238 /* Packet.swift in Sources */,
 				2E9A7D4F1C79F25900EE6238 /* String.swift in Sources */,
 				2E9A7D4D1C79F25700EE6238 /* RawStreamableType.swift in Sources */,
@@ -430,6 +447,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB2FD641C7A27A700BC73B8 /* StreamWriteableType.swift in Sources */,
+				2EB2FD651C7A27A700BC73B8 /* StreamReadableType.swift in Sources */,
 				2E9A7D541C79F25D00EE6238 /* Packet.swift in Sources */,
 				2E9A7D501C79F25A00EE6238 /* String.swift in Sources */,
 				2E9A7D4E1C79F25700EE6238 /* RawStreamableType.swift in Sources */,
@@ -447,6 +466,7 @@
 				2EB2FD561C7A1F6300BC73B8 /* TestPacket.swift in Sources */,
 				2E68AA381C7888CF001C1CCC /* UInt32TestCase.swift in Sources */,
 				2EB2FD541C7A1F6300BC73B8 /* PacketWithSubpacket.swift in Sources */,
+				2EB2FD661C7A298800BC73B8 /* PacketWithCollection.swift in Sources */,
 				2E68AA3A1C788E8B001C1CCC /* PacketTestCase.swift in Sources */,
 				2EB2FD551C7A1F6300BC73B8 /* StringSubpacket.swift in Sources */,
 			);

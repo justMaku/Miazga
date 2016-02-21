@@ -52,3 +52,19 @@ extension Stream {
         return packets
     }
 }
+
+extension Array: StreamWriteableType {
+    public var data: [Byte] {
+        get {
+            var collectionData = [Byte]()
+            for value in self {
+                if let value = value as? StreamWriteableType {
+                    let valueData = value.data
+                    collectionData.appendContentsOf(valueData)
+                }
+            }
+            
+            return collectionData
+        }
+    }
+}
