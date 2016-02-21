@@ -40,4 +40,15 @@ extension Stream {
         let packet = T.decode(fromStream: self)
         return packet
     }
+    
+    public func read<T: Packet>(count count: Int) -> [T] {
+        var packets = [T]()
+        
+        for _ in 0..<count {
+            let packet: T = self.read()
+            packets.append(packet)
+        }
+        
+        return packets
+    }
 }
