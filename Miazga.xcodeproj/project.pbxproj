@@ -29,6 +29,8 @@
 		2E9A7D551C79F25D00EE6238 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E23D0881C77AF82001D02AB /* Stream.swift */; };
 		2E9A7D561C79F25D00EE6238 /* StreamableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68AA2E1C787883001C1CCC /* StreamableType.swift */; };
 		2E9A7D591C79F59300EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
+		2E9A7D5A1C79FCDD00EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
+		2E9A7D5B1C79FCDD00EE6238 /* MemoryStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A7D581C79F59300EE6238 /* MemoryStream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -399,6 +401,7 @@
 				2E9A7D4F1C79F25900EE6238 /* String.swift in Sources */,
 				2E9A7D4D1C79F25700EE6238 /* RawStreamableType.swift in Sources */,
 				2E9A7D531C79F25D00EE6238 /* StreamableType.swift in Sources */,
+				2E9A7D5A1C79FCDD00EE6238 /* MemoryStream.swift in Sources */,
 				2E9A7D521C79F25D00EE6238 /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +414,7 @@
 				2E9A7D501C79F25A00EE6238 /* String.swift in Sources */,
 				2E9A7D4E1C79F25700EE6238 /* RawStreamableType.swift in Sources */,
 				2E9A7D561C79F25D00EE6238 /* StreamableType.swift in Sources */,
+				2E9A7D5B1C79FCDD00EE6238 /* MemoryStream.swift in Sources */,
 				2E9A7D551C79F25D00EE6238 /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Miazga/Targets/watchOS/Info.plist;
+				INFOPLIST_FILE = Targets/watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -650,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Miazga/Targets/watchOS/Info.plist;
+				INFOPLIST_FILE = Targets/watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -707,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Miazga/Targets/iOS/Info.plist;
+				INFOPLIST_FILE = Targets/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -759,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Miazga/Targets/iOS/Info.plist;
+				INFOPLIST_FILE = Targets/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
