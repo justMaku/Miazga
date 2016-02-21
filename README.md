@@ -6,7 +6,7 @@ Miazga is a small library which main purpose is to provide a simple and easy to 
 Writing:
 
 ```swift
-    let stream = MemoryStream(data: [])
+    let stream = MemoryStream()
     stream << UInt32(21) // Age
     stream << "Michał Kałużny"
 ```
@@ -97,4 +97,4 @@ $ carthage update
 ```
 
 # About the name
-[Miazga](https://pl.wikipedia.org/wiki/Miazga_(rzeka)) is a small river flowing through an area where I used to live as a kid. Even though it's really small and name is only recognized by locals, it provided all the kids in the area with plenty of fun I believe it reflects the nature of this project perfectly. 
+[Miazga](https://pl.wikipedia.org/wiki/Miazga_(rzeka)) is a small river flowing near the Polish city of Łódź, through a rural area I lived in as a kid. Even though it's really small and the name is only recognized by locals, the river provided kids in the area with plenty of fun year-round. I believe it reflects the nature of this project perfectly. 
