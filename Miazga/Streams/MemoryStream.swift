@@ -1,27 +1,23 @@
 //
-//  Stream.swift
+//  MemoryStream.swift
 //  Miazga
 //
-//  Created by Michał Kałużny on 19/02/16.
+//  Created by Michał Kałużny on 21/02/16.
 //
 //
 
 import Foundation
 
-public typealias Byte = UInt8
-
-public class Stream {
+public class MemoryStream: Stream {
+    
     private var data: [Byte] = []
     private var cursor: Int = 0
     
-    public init(data: [Byte]) {
+    public init(data: [Byte] = []) {
         self.data = data
     }
-}
-
-extension Stream {
     
-    func write(value: StreamableType) {
+    public func write(value: StreamableType) {
         self.write(value.data)
     }
     
@@ -29,7 +25,7 @@ extension Stream {
         self.data += data
     }
     
-    func read(length: Int) -> [Byte] {
+    public func read(length: Int) -> [Byte] {
         let slice = data[cursor..<cursor+length]
         cursor += length
         return Array(slice)

@@ -29,7 +29,7 @@ public extension Packet {
 
 public extension Packet {
     static func decode(fromData data: [Byte]) -> Self {
-        let stream = Stream(data: data)
+        let stream = MemoryStream(data: data)
         let packet = self.decode(fromStream: stream)
         return packet
     }

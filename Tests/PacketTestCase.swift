@@ -66,7 +66,7 @@ struct PacketWithSubpacket: Packet {
 
 class PacketTestCase: XCTestCase {
 
-    let stream = Stream(data: [])
+    let stream = MemoryStream(data: [])
     
     func testSimplePacket() {
         let packet = TestPacket(x: 12, y: 20)
